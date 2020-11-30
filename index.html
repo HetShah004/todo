@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>ToDo</title>
+    </head>
+    <body>
+        <div class="enter-task">
+            <input type="text" class="enter-task-i" placeholder="Enter a task" id="in">
+            <button type="button" class="sub">
+                <i class='fa fa-plus'></i>
+            </button>
+        </div>
+        <div style="width: 100vw;display:flex; align-items: center; justify-content: center">
+            <button type="button" onclick="if($('.todo-l').html() != ''){$('.todo-l').fadeOut(500, function() {$(this).html('');$(this).fadeIn(5)}); $('.done').fadeIn(500).css({'display': 'flex'}).delay(500).fadeOut(500)}" class="delete">
+                <i class='fa fa-trash'></i>
+            </button>
+            <button type="button" class="dark" onclick="dark()">
+                <i class='fa fa-adjust'></i>
+            </button>
+        </div>
+        <div class="todo-l"></div>
+        <div class="done">
+                <i class="fa fa-check-circle" style="font-size: 100px;color: rgb(100, 100, 100)"></i>
+            </div>
+        <audio src="https://raw.githubusercontent.com/HetShah004/Hetshah004.github.io/main/done-for-you-612.mp3" id="aud"></audio>
+    </body>
+</html>
