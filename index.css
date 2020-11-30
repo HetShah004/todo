@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi');
+
+body {
+    margin:0;
+    overflow-x: hidden;
+    background-color: rgb(200, 200, 200);
+    transition: .5s;
+}
+
+.enter-task {
+    box-shadow: rgba(0, 0, 0, .1) 0 0 30px;
+    display:flex;
+    align-items: center;
+    broder-radius: 10px;
+    position: sticky;
+    width: 100%;
+    background: white;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    bottom: 0;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    overflow-x: hidden;
+}
+
+.done {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(200, 200, 200);
+    z-index: 2;
+}
+
+.enter-task-i {
+    padding: 30px 15px 30px 15px;
+    width: 100%;
+    border:none;
+    font-family: "Alatsi", serif;
+    font-size: 20px;
+    outline: none;
+    background: transparent;
+}
+@keyframes todo{
+    from {
+        margin-top: -100px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+.todo-l {
+    padding: 15px 30px 15px 30px;
+    margin-top: 50px;
+}
+
+.todo-e {
+    padding: 10px;
+    display:flex;
+    background-color: transparent;
+    align-items: center;
+    animation-name: todo;
+    animation-duration: 0.5s;
+    justify-content: space-between;
+    font-family: "Alatsi", serif;
+    box-shadow: rgba(150, 150, 150, .3) 0 0 30px;
+    border-radius: 10px;
+    overflow-x: hidden;    
+    margin-bottom: 40px;
+}
+
+.todo-e button {
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+}
+
+.sub, .delete, .dark {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+    padding: 20px;
+}
